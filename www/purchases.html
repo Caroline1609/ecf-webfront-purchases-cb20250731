@@ -13,7 +13,7 @@
     </header>
     <main>
         <form class="purchase">
-            <fieldset>
+            <fieldset id="info">
                 <legend> Informations de l'émetteur de la demande :</legend>
                 <label for="name">Nom</label>
                 <input type="text" id="name" name="name" required placeholder="Nom de famille" title="Veuillez renseigner votre nom de famille">
@@ -32,7 +32,7 @@
                     <option>Service informatique</option>
                 </select>
             </fieldset>
-            <fieldset>
+            <fieldset id="detail">
                 <legend>Détails de l'article demandé :</legend>
                 <label for="nameArticle">Nom de l'artcle</label>
                 <input type="text" id="nameArticle" name="nameArticle" required placeholder="Nom de l'article" title="Veuillez renseigner le nom de l'article">
@@ -48,7 +48,7 @@
             </fieldset>
             <fieldset>
                 <legend>Justification de la demande :</legend>
-                <label for="descriptionRequest "> de la demande :</label>
+                <label for="descriptionRequest "> Description de la demande :</label>
                 <textarea id="description" cols="100" rows="5"></textarea>
             </fieldset>
             <fieldset>
