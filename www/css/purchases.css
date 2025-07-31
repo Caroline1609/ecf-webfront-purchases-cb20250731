@@ -22,6 +22,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    font-size: 20px;
     flex-direction: column;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   /* Vous pouvez modifier la police */
@@ -67,7 +68,9 @@ fieldset {
     gap: 10px;
     padding: 23px;
     align-items: center;
-    border: var(--crm-primary) 1px solid;
+    border: var(--crm-primary) 2px solid;
+    border-style: dashed;
+
 }
 
 #info label {
@@ -92,9 +95,29 @@ fieldset {
     flex-basis: 10%;
 }
 
+#button{
+    display: flex;
+    justify-content: center;
+}
 
+#buttonSubmit, #buttonReset{
+padding: 20px;
+}
 
+#buttonSubmit{
+    background-color: var(--crm-success);
+    color: var(--light);
+    border: none;
+    margin-right: 3rem;
+    font-size: 20px;
+}
 
+#buttonReset{
+    background-color: var(--crm-alert);
+    color: var(--light);
+    border: none;
+    font-size: 20px;
+}
 
 
 
