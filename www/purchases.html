@@ -4,22 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demande d'achats</title>
-    <link rel="stylesheet" href="css/purchaise.css">
+    <link rel="stylesheet" href="./css/purchases.css">
 </head>
 <body>
     <header class="title">
         <h1>Formulaire de Demande d'Achats</h1>
-        <img src="img/logo-centre-de-readaptation-de-mulhouse-colors.svg" alt="Logo de l'entreprise">
+        <img src="./img/logo-centre-de-readaptation-de-mulhouse-colors.svg" alt="Logo de l'entreprise">
     </header>
-
     <main>
-
         <form class="purchase">
+            <fieldset>
+                <legend> Informations de l'émetteur de la demande :</legend>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required placeholder="Nom de famille" title="Veuillez renseigner votre nom de famille">
 
+                <label for="firsName">Prénom</label>
+                <input type="text" id="firsName" name="firsName" required placeholder="Prénom" title="Veuillez renseigner votre prénom">
+
+                <label for="email">Adresse E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="E-mail" title="Veuillez renseigner votre Email">
+
+                <label for="department">Service</label>
+                <select name="department " id="department">
+                    <option selected value="">--Choississez le service--</option>
+                    <option>Comptabilité</option>
+                    <option>Ressource humaines</option>
+                    <option>Service informatique</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Détails de l'article demandé :</legend>
+                <label for="nameArticle">Nom de l'artcle</label>
+                <input type="text" id="nameArticle" name="nameArticle" required placeholder="Nom de l'article" title="Veuillez renseigner le nom de l'article">
+
+                <label for="description ">Description : </label>
+                <textarea id="description" cols="100" rows="5" required></textarea>
+
+                <label for="quantity">Quantité(s) :</label>
+                <input type="number" id="quantity" name="quantity" required placeholder="quantité(s) " min="1" max="100">
+
+                <label for="price">Prix</label>
+                <input type="number" id="price" required>
+            </fieldset>
+            <fieldset>
+                <legend>Justification de la demande :</legend>
+                <label for="descriptionRequest "> de la demande :</label>
+                <textarea id="description" cols="100" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Envoyer la demande" />
+                <input type="reset" value="Annuler" />
+            </fieldset>
         </form>
 
     </main>
-
     <footer class="info">
         <h2>Informations Complémentaires</h2>
         <p>Veuillez remplir ce formulaire avec précision. Toute demande incomplète sera ignorée sans notification.</p>
